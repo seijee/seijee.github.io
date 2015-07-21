@@ -9,6 +9,9 @@ body {
 	max-width:900px;
 	float:left;
 }
+.console table td{
+	font-size: 0.95em;
+}
 .console a {
 	color: #66FF33;
 } 
