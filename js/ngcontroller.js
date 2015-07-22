@@ -16,6 +16,7 @@ var app = angular.module('Console', [ 'ngSanitize' ]);
 											,{'cmd' : 'contact','description' : 'view my contact info'}
 											,{'cmd' : 'resume','description' : 'open my resume in a new tab'}
 											,{'cmd' : 'linkedin','description' : 'open my LinkedIn profile in a new tab'}
+											,{'cmd' : 'projects','description' : 'display some of my projects with description'}
 											,{'cmd' : 'clear','description' : 'clear the screen'}
 											//,{'cmd' : 'exit', 'description' : 'closes this terminal window'}
 											//,{ 'cmd': 'hire', 'description': 'initiate hiring protocol' }
