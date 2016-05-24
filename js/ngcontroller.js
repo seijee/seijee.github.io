@@ -46,7 +46,7 @@ var app = angular.module('Console', [ 'ngSanitize' ]);
 											{	
 											'title' 		: 'Crime  Analysis  Software '
 											,'company'		: 'C.I.D Madhya Pradesh Government'
-											,'description' 	: 'Developed  and  deployed  an online system to categorize FIR of various crimes lodged all over the province to generate reports, graphs and statistical data. This project is being used by Madhya Pradesh Police Department.'
+											,'description' 	: 'Developed  and  deployed  an online system to categorize FIR of various crimes lodged all over the province to generate reports, graphs and statistical data. This project is being used by Madhya Pradesh Police Department. (you can see my name in the source code :D)'
 											,'link'			: 'http://cid.mppolice.gov.in/crime_analysis'
 											,'skills'		: ''
 											},
@@ -54,7 +54,14 @@ var app = angular.module('Console', [ 'ngSanitize' ]);
 											'title' 		: 'Rang Dey Zindagi'
 											,'company'		: 'NGO'
 											,'description' 	: 'developed the website for “Rang Dey Zindagi” a local NGO that works for less privileged students. Volunteered and tried to support the cause by providing it a means to enhance its reach'
-											,'link'			: 'http://rdz.org.in'
+											,'link'			: ''
+											,'skills'		: ''
+											},
+											{	
+											'title' 		: 'Pragyasagar Website'
+											,'company'		: 'Education Institute'
+											,'description' 	: 'developed the website for “Pragyasager Academy” a newly openned college in central India. website is fully responsive'
+											,'link'			: 'http://pragyasagar.ac.in'
 											,'skills'		: ''
 											}
 									];
@@ -87,10 +94,10 @@ var app = angular.module('Console', [ 'ngSanitize' ]);
 														+ "<br/>email\t: charchitgupta18@gmail.com<br/>";
 												break;
 											case 'hostname':
-												result = "Hi, my name is Charchit. "
-														+"<br/>I currently live in Hyderabad, working for an IT company. However, open for new better job offers. ;)"
+												result = "Hello there! my name is Charchit. "
+														+"<br/>I currently live in Chennai, working for a big product based MNC."
 														+"<br/>My hometown is Indore, the foodie city of Madhya Pradesh."
-														+"<br/>I am passionate about street-food, sketching and ofcourse, Programming."
+														+"<br/>I am passionate about street-food, sketching and programming."
 														+"<br/>";
 												break;
 											case 'resume':
