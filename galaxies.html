@@ -108,14 +108,48 @@
 
         window.onload = generateGalaxies;
     </script>
+
+    <style>
+        .container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+        #ar-button {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 100;
+        }
+    </style>
 </head>
 <body>
-    <a-scene xr-mode-ui="enabled: false"
-             renderer="colorManagement: true"
-             vr-mode-ui="enabled: false"
-             webxr="requiredFeatures: ['local-floor', 'hand-tracking', 'passthrough'], optionalFeatures: ['dom-overlay'], overlayElement: #overlay"
-             ar-mode-ui="enabled: false" >
-        <a-camera position="0 1.6 0"></a-camera>
-    </a-scene>
+    <div class="container">
+        <a-scene xr-mode-ui="enabled: false"
+                 renderer="colorManagement: true"
+                 webxr="requiredFeatures: ['local-floor', 'hand-tracking'], optionalFeatures: ['passthrough'], overlayElement: #overlay">
+            <a-camera position="0 1.6 0"></a-camera>
+        </a-scene>
+        <button id="ar-button">Start AR Mode</button>
+    </div>
+
+    <script>
+        document.getElementById('ar-button').addEventListener('click', () => {
+            const scene = document.querySelector('a-scene');
+            if (scene.is('ar-mode')) {
+                scene.exitAR();
+            } else {
+                scene.enterAR();
+            }
+        });
+    </script>
 </body>
 </html>
